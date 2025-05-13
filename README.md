@@ -46,6 +46,20 @@ This project demonstrates the creation of an interactive **Chocolate Sales Dashb
 
 ---
 
+### 2. [Hospital Emergency Room Analysis](https://github.com/LeadGenData/Hosptal-Emergency-Room-Analysis)
+An in-depth, Excel-based analysis of hospital emergency room data. The project showcases advanced Excel techniques like pivot tables, conditional formatting, and data visualization to uncover actionable insights.
+
+#### Key Features:
+- **Patient Demographics**: Trends in gender and age groups.
+- **Emergency Room Utilization**: Peak usage patterns and patient inflow/outflow.
+- **Resource Allocation**: Insights into resource performance and optimization strategies.
+
+![Analysis Preview](https://github.com/LeadGenData/Hosptal-Emergency-Room-Analysis/blob/main/Hospital%20Emergency%20Room%20Data%20SS.png)
+
+[Watch the Video Demo](https://github.com/LeadGenData/Hosptal-Emergency-Room-Analysis/blob/main/Hospital%20Emergency%20Room%20Data%20-%20DB.mp4)
+
+---
+
 ## 📫 Contact Me
 - **Email**: [hareshmkumar9@gmail.com](mailto:hareshmkumar9@gmail.com)
 - **LinkedIn**: [Haresh Kumar](https://www.linkedin.com/in/haresh-kumar-2a2a58267/)
