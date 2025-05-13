@@ -4,96 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Haresh Kumar Portfolio</title>
-    <link rel="stylesheet" href="css/style.css"> <!-- Add your custom CSS here -->
-    <style>
-        /* Basic styles for customization */
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            background: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background: #333;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-        header p {
-            margin: 0;
-            font-size: 1.2em;
-        }
-        .container {
-            max-width: 960px;
-            margin: 20px auto;
-            padding: 20px;
-            background: #fff;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        .project {
-            margin-bottom: 20px;
-        }
-        .project img {
-            max-width: 100%;
-            border-radius: 5px;
-        }
-        .project h3 {
-            margin: 10px 0 5px 0;
-        }
-        .project p {
-            margin: 0;
-        }
-        footer {
-            text-align: center;
-            padding: 10px 0;
-            background: #333;
-            color: #fff;
-        }
-        footer a {
-            color: #fff;
-            text-decoration: underline;
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Header Section -->
-    <header>
-        <h1>Haresh Kumar</h1>
-        <p>Data Analyst | Excel | Power BI | Data Visualization</p>
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm <span class="highlight">Haresh Kumar</span></h1>
+            <p>Data Analyst | Excel Enthusiast | Power BI Specialist</p>
+            <a href="#projects" class="btn">Explore My Work</a>
+        </div>
     </header>
 
-    <!-- Main Content -->
-    <div class="container">
+    <!-- About Section -->
+    <section class="about">
         <h2>About Me</h2>
-        <p>Hello! I’m Haresh Kumar, a passionate data analyst skilled in transforming raw data into actionable insights. My expertise lies in Excel, Power BI, and creating visually compelling dashboards to drive data-driven decisions.</p>
+        <p>
+            I’m a passionate Data Analyst skilled in Excel, Power BI, and Data Visualization. 
+            I specialize in transforming raw data into actionable insights that help businesses make smarter decisions.
+        </p>
+    </section>
 
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
         <h2>Featured Projects</h2>
-        <div class="project">
-            <h3><a href="https://github.com/LeadGenData/Hosptal-Emergency-Room-Analysis">Hospital Emergency Room Analysis</a></h3>
-            <p>An in-depth Excel-based analysis of emergency room data focusing on trends and resource allocation.</p>
-            <img src="assets/hospital-analysis.png" alt="Hospital Emergency Room Analysis">
+        <!-- 1st Project -->
+        <div class="project-card">
+            <img src="assets/chocolate-sales-dashboard.jpg" alt="Chocolate Sales Dashboard">
+            <h3>Chocolate Sales Dashboard</h3>
+            <p>Interactive dashboard showcasing sales trends and insights for a chocolate business using Power BI.</p>
+            <a href="https://github.com/LeadGenData/chocolate-sales-dashboard" class="btn">View Project</a>
         </div>
-        <div class="project">
-            <h3><a href="https://github.com/LeadGenData/Sales-Data-Analysis">Sales Data Analysis</a></h3>
-            <p>Detailed insights into sales trends and regional performance using advanced Excel techniques.</p>
-            <img src="assets/sales-analysis.png" alt="Sales Data Analysis">
+        <!-- 2nd Project -->
+        <div class="project-card">
+            <img src="assets/hospital-analysis.jpg" alt="Hospital Emergency Room Analysis">
+            <h3>Hospital Emergency Room Analysis</h3>
+            <p>Analyzing emergency room data to identify trends and improve resource allocation.</p>
+            <a href="https://github.com/LeadGenData/Hosptal-Emergency-Room-Analysis" class="btn">View Project</a>
         </div>
+    </section>
 
-        <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:hareshmkumar9@gmail.com">hareshmkumar9@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/haresh-kumar-2a2a58267/">Haresh Kumar</a></p>
-    </div>
+    <!-- Video Section -->
+    <section id="video" class="video-section">
+        <h2>Project Walkthrough</h2>
+        <p>Watch the detailed walkthrough of my Hospital Emergency Room Analysis project below:</p>
+        <!-- Embed YouTube Video or Local Video -->
+        <div class="video-container">
+            <!-- Replace the src link with your YouTube video or local hosted video -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
 
-    <!-- Footer Section -->
+    <!-- Contact Section -->
+    <section class="contact">
+        <h2>Get In Touch</h2>
+        <p>Feel free to reach out to me for collaborations or any queries!</p>
+        <a href="mailto:hareshmkumar9@gmail.com" class="btn">Email Me</a>
+    </section>
+
     <footer>
-        <p>&copy; 2025 Haresh Kumar. Designed with ❤️.</p>
-        <p><a href="https://github.com/LeadGenData">GitHub Profile</a></p>
+        <p>&copy; 2025 Haresh Kumar | Designed with ❤️</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/haresh-kumar-2a2a58267/">LinkedIn</a> | 
+            <a href="https://github.com/LeadGenData">GitHub</a>
+        </div>
     </footer>
 </body>
 </html>
