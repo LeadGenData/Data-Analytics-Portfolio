@@ -62,72 +62,77 @@ section h2 {
     border-radius: 10px;
 }
 
-/* Projects Section */
-.projects {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+/* Project Gallery */
+.projects .project-gallery {
+    display: flex;
     gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
     padding: 20px;
 }
 
-.project-card {
+.project {
     background: white;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+    width: 300px;
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.project-card:hover {
+.project:hover {
     transform: translateY(-10px);
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.project-card img {
+.project img {
     width: 100%;
     height: 200px;
     object-fit: cover;
 }
 
-.project-card h3 {
-    margin: 10px;
-    font-size: 1.5rem;
+.project-info {
+    padding: 20px;
+    text-align: center;
 }
 
-.project-card p {
-    margin: 10px;
-    color: #555;
+.project-info h3 {
+    margin: 10px 0;
 }
 
-.project-card .btn {
-    display: inline-block;
-    background: #2575fc;
-    color: white;
-    padding: 10px 20px;
-    margin: 10px;
-    border-radius: 50px;
-    text-decoration: none;
-    transition: transform 0.3s, background 0.3s;
-}
-
-.project-card .btn:hover {
-    background: #6a11cb;
-    transform: scale(1.05);
+.project-info p {
+    color: #666;
 }
 
 /* Video Section */
-.video-section {
-    text-align: center;
-    padding: 40px 20px;
-    background: #f9f9f9;
-}
-
-.video-container {
+.video-section .video-container {
     margin: 20px auto;
     max-width: 800px;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Skills Section */
+.skills .skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.skill {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.skill h3 {
+    color: #2575fc;
 }
 
 /* Contact Section */
