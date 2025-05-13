@@ -1,52 +1,99 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Haresh Kumar Portfolio</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haresh Kumar Portfolio</title>
+    <link rel="stylesheet" href="css/style.css"> <!-- Add your custom CSS here -->
+    <style>
+        /* Basic styles for customization */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header p {
+            margin: 0;
+            font-size: 1.2em;
+        }
+        .container {
+            max-width: 960px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .project {
+            margin-bottom: 20px;
+        }
+        .project img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        .project h3 {
+            margin: 10px 0 5px 0;
+        }
+        .project p {
+            margin: 0;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #333;
+            color: #fff;
+        }
+        footer a {
+            color: #fff;
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <!-- Header -->
-    <header id="header">
-        <h1>Hi, I'm Haresh Kumar</h1>
-        <p>Passionate Data Analyst | Skilled in Excel, Power BI, and Data Visualization</p>
-        <a href="#main" class="button">Discover My Work</a>
+    <!-- Header Section -->
+    <header>
+        <h1>Haresh Kumar</h1>
+        <p>Data Analyst | Excel | Power BI | Data Visualization</p>
     </header>
 
-    <!-- Main Section -->
-    <section id="main">
-        <header>
-            <h2>Projects</h2>
-        </header>
-        <div class="content">
-            <article>
-                <h3><a href="https://github.com/LeadGenData/Hosptal-Emergency-Room-Analysis">Hospital Emergency Room Analysis</a></h3>
-                <p>An in-depth Excel-based analysis of emergency room data focusing on trends and resource allocation.</p>
-            </article>
-            <article>
-                <h3><a href="https://github.com/LeadGenData/Sales-Data-Analysis">Sales Data Analysis</a></h3>
-                <p>Detailed insights into sales trends and regional performance using advanced Excel techniques.</p>
-            </article>
+    <!-- Main Content -->
+    <div class="container">
+        <h2>About Me</h2>
+        <p>Hello! I’m Haresh Kumar, a passionate data analyst skilled in transforming raw data into actionable insights. My expertise lies in Excel, Power BI, and creating visually compelling dashboards to drive data-driven decisions.</p>
+
+        <h2>Featured Projects</h2>
+        <div class="project">
+            <h3><a href="https://github.com/LeadGenData/Hosptal-Emergency-Room-Analysis">Hospital Emergency Room Analysis</a></h3>
+            <p>An in-depth Excel-based analysis of emergency room data focusing on trends and resource allocation.</p>
+            <img src="assets/hospital-analysis.png" alt="Hospital Emergency Room Analysis">
         </div>
-    </section>
+        <div class="project">
+            <h3><a href="https://github.com/LeadGenData/Sales-Data-Analysis">Sales Data Analysis</a></h3>
+            <p>Detailed insights into sales trends and regional performance using advanced Excel techniques.</p>
+            <img src="assets/sales-analysis.png" alt="Sales Data Analysis">
+        </div>
 
-    <!-- About Section -->
-    <section id="about">
-        <header>
-            <h2>About Me</h2>
-        </header>
-        <p>I specialize in transforming raw data into actionable insights. My work helps businesses make data-driven decisions.</p>
-        <ul class="icons">
-            <li><a href="mailto:hareshmkumar9@gmail.com" class="icon">Email</a></li>
-            <li><a href="https://www.linkedin.com/in/haresh-kumar-2a2a58267/" class="icon">LinkedIn</a></li>
-            <li><a href="https://github.com/LeadGenData" class="icon">GitHub</a></li>
-        </ul>
-    </section>
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:hareshmkumar9@gmail.com">hareshmkumar9@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/haresh-kumar-2a2a58267/">Haresh Kumar</a></p>
+    </div>
 
-    <!-- Footer -->
-    <footer id="footer">
-        <p>&copy; 2025 Haresh Kumar | Design by HTML5 UP</p>
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Haresh Kumar. Designed with ❤️.</p>
+        <p><a href="https://github.com/LeadGenData">GitHub Profile</a></p>
     </footer>
 </body>
 </html>
