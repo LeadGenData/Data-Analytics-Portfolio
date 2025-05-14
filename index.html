@@ -18,18 +18,21 @@
         <link href="css/styles.css" rel="stylesheet" />
         <style>
             .libutton {
-                display: flex;
+                display: inline-flex;
                 justify-content: center;
-                padding: 7px;
+                align-items: center;
+                padding: 7px 20px;
                 text-align: center;
                 text-decoration: none;
                 color: #fff;
-                width: 200px;
-                height: 32px;
                 border-radius: 16px;
                 background-color: #0A66C2;
                 font-family: "Roboto", sans-serif;
                 font-size: 14px;
+                transition: background-color 0.3s;
+            }
+            .libutton:hover {
+                background-color: #004182;
             }
         </style>
     </head>
@@ -59,25 +62,25 @@
             <header class="py-5" style="background: linear-gradient(90deg, #4A00E0, #8E2DE2); color: white;">
                 <div class="container px-5 pb-5">
                     <div class="row gx-5 align-items-center">
-                        <div class="col-xxl-5">
-                            <div class="text-center text-xxl-start">
+                        <div class="col-lg-6">
+                            <div class="text-center text-lg-start">
                                 <div class="badge bg-gradient-primary-to-secondary text-white mb-4">
                                     <div class="text-uppercase">Data Analytics &middot; Development &middot; Portfolio</div>
                                 </div>
-                                <div class="fs-3 fw-light">Welcome to my portfolio</div>
-                                <h1 class="display-3 fw-bolder mb-5">
+                                <h1 class="display-3 fw-bolder mb-4">
                                     <span class="text-gradient d-inline" style="background: linear-gradient(to right, #FDC830, #F37335); -webkit-background-clip: text; color: transparent;">
-                                        I am Haresh Kumar M
+                                        Haresh Kumar M
                                     </span>
                                 </h1>
-                                <div class="d-grid gap-3 d-sm-flex justify-content-center mb-3">
-                                    <a class="btn btn-dark btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" href="resume.html">Resume</a>
-                                    <a class="btn btn-outline-light btn-lg px-5 py-3 fs-6 fw-bolder" href="projects.html">Projects</a>
+                                <p class="lead fw-light mb-4">Welcome to my portfolio, where I showcase my skills in data analytics and development.</p>
+                                <div class="d-grid gap-3 d-sm-flex justify-content-center justify-content-lg-start">
+                                    <a class="btn btn-dark btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" href="resume.html">View Resume</a>
+                                    <a class="libutton" href="https://www.linkedin.com/in/haresh-kumar-2a2a58267/" target="_blank">Follow on LinkedIn</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xxl-7">
-                            <div class="d-flex justify-content-center mt-5 mt-xxl-0">
+                        <div class="col-lg-6">
+                            <div class="d-flex justify-content-center mt-5 mt-lg-0">
                                 <div class="profile bg-gradient-primary-to-secondary">
                                     <img class="profile-img" style="width: 200px; height: 200px;" src="assets/profile.png" alt="Your photo" />
                                 </div>
@@ -91,18 +94,15 @@
             <section class="py-5" style="background-color: #F4F4F4;">
                 <div class="container px-5">
                     <div class="row gx-5 justify-content-center">
-                        <div class="col-xxl-8">
+                        <div class="col-lg-8">
                             <div class="text-center my-5">
                                 <h2 class="display-5 fw-bolder">
                                     <span class="text-gradient d-inline" style="background: linear-gradient(to right, #FDC830, #F37335); -webkit-background-clip: text; color: transparent;">
                                         About Me
                                     </span>
                                 </h2>
-                                <p class="lead fw-light mb-4">Hello! I’m Haresh Kumar M, a passionate data analyst and developer.</p>
-                                <p class="text-muted">I specialize in transforming data into actionable insights and building impactful digital solutions. With a keen eye for detail and a strong focus on quality, I help organizations achieve their goals efficiently.</p>
-                                <div class="mt-4">
-                                    <a class="libutton" href="https://www.linkedin.com/in/haresh-kumar-2a2a58267/" target="_blank">Follow on LinkedIn</a>
-                                </div>
+                                <p class="lead fw-light mb-4">I’m a passionate data analyst and developer who specializes in transforming data into actionable insights and building impactful digital solutions.</p>
+                                <p class="text-muted">With a keen eye for detail and a strong focus on quality, I help organizations achieve their goals efficiently. Feel free to connect with me on LinkedIn to learn more about my work and expertise.</p>
                             </div>
                         </div>
                     </div>
