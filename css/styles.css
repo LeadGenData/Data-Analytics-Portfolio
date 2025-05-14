@@ -1,98 +1,181 @@
 @charset "UTF-8";
 /*!
-* Start Bootstrap - Personal v1.0.1 (https://startbootstrap.com/template-overviews/personal)
-* Copyright 2013-2023 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-personal/blob/master/LICENSE)
-*/
+ * Start Bootstrap - Personal v1.0.1 (https://startbootstrap.com/template-overviews/personal)
+ * Copyright 2013-2023 Start Bootstrap
+ * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-personal/blob/master/LICENSE)
+ */
 /*!
- * Bootstrap  v5.2.3 (https://getbootstrap.com/)
+ * Bootstrap v5.2.3 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
- * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
 :root {
-  --bs-blue: #4A00E0;
-  --bs-indigo: #6610f2;
-  --bs-purple: #4A00E0;
-  --bs-pink: #FDC830;
-  --bs-red: #dc3545;
-  --bs-orange: #fd7e14;
-  --bs-yellow: #FDC830;
-  --bs-green: #198754;
-  --bs-teal: #20c997;
-  --bs-cyan: #0dcaf0;
-  --bs-black: #000;
-  --bs-white: #fff;
-  --bs-gray: #6c757d;
-  --bs-gray-dark: #343a40;
-  --bs-gray-100: #f8f9fa;
-  --bs-gray-200: #e9ecef;
-  --bs-gray-300: #dee2e6;
-  --bs-gray-400: #ced4da;
-  --bs-gray-500: #adb5bd;
-  --bs-gray-600: #6c757d;
-  --bs-gray-700: #495057;
-  --bs-gray-800: #343a40;
-  --bs-gray-900: #212529;
-  --bs-primary: #4A00E0;
-  --bs-secondary: #FDC830;
-  --bs-success: #198754;
-  --bs-info: #0dcaf0;
-  --bs-warning: #ffc107;
-  --bs-danger: #dc3545;
-  --bs-light: #F4F4F4;
-  --bs-dark: #212529;
-  --bs-primary-rgb: 74, 0, 224;
-  --bs-secondary-rgb: 253, 200, 48;
-  --bs-success-rgb: 25, 135, 84;
-  --bs-info-rgb: 13, 202, 240;
-  --bs-warning-rgb: 255, 193, 7;
-  --bs-danger-rgb: 220, 53, 69;
-  --bs-light-rgb: 244, 244, 244;
-  --bs-dark-rgb: 33, 37, 41;
-  --bs-white-rgb: 255, 255, 255;
-  --bs-black-rgb: 0, 0, 0;
-  --bs-body-color-rgb: 33, 37, 41;
-  --bs-body-bg-rgb: 244, 244, 244;
-  --bs-font-sans-serif: "Roboto", sans-serif;
-  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
-  --bs-body-font-family: var(--bs-font-sans-serif);
-  --bs-body-font-size: 1rem;
-  --bs-body-font-weight: 400;
-  --bs-body-line-height: 1.5;
-  --bs-body-color: #212529;
-  --bs-body-bg: #F4F4F4;
-  --bs-border-width: 1px;
-  --bs-border-style: solid;
-  --bs-border-color: #dee2e6;
-  --bs-border-color-translucent: rgba(0, 0, 0, 0.175);
-  --bs-border-radius: 0.375rem;
-  --bs-link-color: #4A00E0;
-  --bs-link-hover-color: #8E2DE2;
-  --bs-code-color: #FDC830;
+  --primary-color: #4A00E0; /* Gradient Purple */
+  --secondary-color: #FDC830; /* Gold Gradient */
+  --background-light: #F4F4F4; /* Light Background */
+  --background-dark: #212529; /* Dark Background */
+  --text-dark: #212529; /* Dark Text */
+  --text-light: #ffffff; /* Light Text */
+  --text-gradient: linear-gradient(to right, #FDC830, #F37335); /* Gradient Text */
+  --font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
-/* Text Gradient */
-.text-gradient {
-  background: linear-gradient(to right, #FDC830, #F37335);
+/* General Styles */
+body {
+  font-family: var(--font-family);
+  background-color: var(--background-light);
+  color: var(--text-dark);
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #6a11cb; /* Lighter purple */
+}
+
+/* Navbar */
+.navbar {
+  background-color: #ffffff;
+  padding: 1rem 0;
+}
+
+.navbar-brand span {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.navbar-nav .nav-link {
+  color: var(--text-dark);
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--primary-color);
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: var(--text-light);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #6a11cb;
+  border-color: #6a11cb;
+}
+
+.btn-outline-dark {
+  border-color: var(--text-dark);
+  color: var(--text-dark);
+}
+
+.btn-outline-dark:hover {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+  color: var(--text-light);
+}
+
+/* Header */
+header {
+  background-color: #ffffff;
+  padding: 4rem 0;
+}
+
+header .badge {
+  background: var(--text-gradient);
+  color: var(--text-light);
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+}
+
+header h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+header h1 .text-gradient {
+  background: var(--text-gradient);
   -webkit-background-clip: text;
   color: transparent;
 }
 
-/* Gradient Backgrounds */
+header .lead {
+  font-size: 1.25rem;
+  color: var(--text-dark);
+}
+
+/* About Section */
+section.bg-light {
+  background-color: var(--background-light);
+  padding: 3rem 0;
+}
+
+section h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+section h2 .text-gradient {
+  background: var(--text-gradient);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+section p {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: var(--text-dark);
+}
+
+section .social-links i {
+  font-size: 2rem;
+  transition: color 0.3s ease;
+}
+
+section .social-links a:hover i {
+  color: var(--primary-color);
+}
+
+/* Footer */
+footer {
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  padding: 2rem 0;
+  text-align: center;
+}
+
+footer a {
+  color: var(--secondary-color);
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: var(--text-light);
+}
+
+/* Utility Classes */
+.text-gradient {
+  background: var(--text-gradient);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
 .bg-gradient-primary {
   background: linear-gradient(to right, #4A00E0, #8E2DE2);
 }
 
 .bg-gradient-secondary {
   background: linear-gradient(to right, #FDC830, #F37335);
-}
-
-/* Button Hover Effects */
-.btn-primary:hover {
-  background-color: #8E2DE2;
-  border-color: #8E2DE2;
 }
 
 .btn-secondary:hover {
@@ -103,21 +186,4 @@
 /* Section Padding */
 section {
   padding: 3rem 0;
-}
-
-/* Footer */
-footer {
-  background: var(--bs-primary);
-  color: var(--bs-light);
-  padding: 2rem 0;
-  text-align: center;
-}
-
-footer a {
-  color: var(--bs-secondary);
-  text-decoration: none;
-}
-
-footer a:hover {
-  color: var(--bs-light);
 }
