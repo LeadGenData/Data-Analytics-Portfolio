@@ -20,43 +20,15 @@ I am seeking opportunities to leverage my analytical skills and business acumen 
 
 ## 🗂️ Projects
 
-### 1. [Chocolate Sales Dashboard](https://github.com/LeadGenData/chocolate-sales-dashboard)
-This project demonstrates the creation of an interactive **Chocolate Sales Dashboard** using **Power BI**, **SQL**, and **Excel**. It provides a comprehensive view of key business metrics like total revenue, boxes shipped, and revenue per box.
+### Chocolate Sales Dashboard
+- **Description**: This project demonstrates the creation of an interactive Chocolate Sales Dashboard using Power BI, SQL, and Excel. It provides a comprehensive view of key business metrics like total revenue, boxes shipped, and revenue per box.
+- **Technologies**: Power BI, SQL, Excel, DAX
+- **GitHub Link**: [Chocolate Sales Dashboard](https://github.com/LeadGenData/chocolate-sales-dashboard)
 
-#### Key Features:
-1. **Dynamic Product Ranking**: Displays the top 5 products by revenue, which can be filtered by country or salesperson.
-2. **Revenue Trends**: A line chart showing monthly revenue trends to highlight seasonal patterns.
-3. **Salesperson Performance**: A ranking matrix showing sales performance based on revenue, boxes shipped, and revenue per box.
-4. **Geographic Analysis**: A pie chart visualizing the distribution of revenue by country.
-5. **Real-time KPIs**: The dashboard automatically updates KPIs based on filter selection, showing total revenue, boxes shipped, and average revenue per box.
-
-#### Tools Used:
-- **Power BI**: For building the interactive dashboard and visualizations.
-- **Excel**: For initial data cleaning and analysis.
-- **DAX (Data Analysis Expressions)**: To create custom metrics and calculations.
-
----
-
-### Dashboard Preview
-![Chocolate Sales Dashboard](https://github.com/LeadGenData/chocolate-sales-dashboard/blob/main/Chocolcates%20Sales%20Dashboard.JPG)
-
-#### How to Use:
-1. Open the Chocolate Sales Dashboard file in Power BI.
-2. Use filters to dynamically update the dashboard based on country, salesperson, and product.
-
----
-
-### 2. [Hospital Emergency Room Analysis](https://github.com/LeadGenData/Hosptal-Emergency-Room-Analysis)
-An in-depth, Excel-based analysis of hospital emergency room data. The project showcases advanced Excel techniques like pivot tables, conditional formatting, and data visualization to uncover actionable insights.
-
-#### Key Features:
-- **Patient Demographics**: Trends in gender and age groups.
-- **Emergency Room Utilization**: Peak usage patterns and patient inflow/outflow.
-- **Resource Allocation**: Insights into resource performance and optimization strategies.
-
-![Analysis Preview](https://github.com/LeadGenData/Hosptal-Emergency-Room-Analysis/blob/main/Hospital%20Emergency%20Room%20Data%20SS.png)
-
-[Watch the Video Demo](https://github.com/LeadGenData/Hosptal-Emergency-Room-Analysis/blob/main/Hospital%20Emergency%20Room%20Data%20-%20DB.mp4)
+### Hospital Emergency Room Analysis
+- **Description**: An in-depth, Excel-based analysis of hospital emergency room data. The project showcases advanced Excel techniques like pivot tables, conditional formatting, and data visualization to uncover actionable insights.
+- **Technologies**: Excel
+- **GitHub Link**: [Hospital Emergency Room Analysis](https://github.com/LeadGenData/Hosptal-Emergency-Room-Analysis)
 
 ---
 
