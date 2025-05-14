@@ -11,7 +11,7 @@
         <!-- Custom Google font-->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet" />
         <!-- Bootstrap icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
@@ -20,13 +20,15 @@
             :root {
                 --primary-color: #4A00E0; /* Gradient Purple */
                 --secondary-color: #FDC830; /* Gold Gradient */
-                --light-bg: #F4F4F4; /* Soft Background */
-                --dark-text: #212529; /* Dark Text */
-                --text-gradient: linear-gradient(to right, #FDC830, #F37335);
+                --background-light: #F4F4F4; /* Light Background */
+                --text-dark: #212529; /* Dark Text */
+                --text-gradient: linear-gradient(to right, #FDC830, #F37335); /* Gradient Text */
             }
 
             body {
                 font-family: 'Plus Jakarta Sans', sans-serif;
+                background-color: var(--background-light);
+                color: var(--text-dark);
             }
 
             .navbar-brand span {
@@ -36,10 +38,11 @@
             .btn-primary {
                 background-color: var(--primary-color);
                 border-color: var(--primary-color);
+                color: #fff;
             }
 
             .btn-primary:hover {
-                background-color: #6a11cb; /* Slightly lighter gradient purple */
+                background-color: #6a11cb;
                 border-color: #6a11cb;
             }
 
@@ -61,7 +64,8 @@
             }
 
             footer {
-                background-color: var(--light-bg);
+                background-color: var(--background-light);
+                text-align: center;
             }
         </style>
     </head>
@@ -89,7 +93,7 @@
                         <div class="col-xxl-5">
                             <!-- Header text content-->
                             <div class="text-center text-xxl-start">
-                                <div class="badge bg-gradient-primary-to-secondary text-white mb-4"><div class="text-uppercase">Data Analytics &middot; Development &middot; Portfolio</div></div>
+                                <div class="badge mb-4"><div class="text-uppercase">Data Analytics &middot; Development &middot; Portfolio</div></div>
                                 <div class="fs-3 fw-light text-muted">Welcome to my portfolio</div>
                                 <h1 class="display-3 fw-bolder mb-5"><span class="text-gradient d-inline">I am Haresh Kumar M</span></h1>
                                 <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
@@ -101,8 +105,7 @@
                         <div class="col-xxl-7">
                             <!-- Header profile picture-->
                             <div class="d-flex justify-content-center mt-5 mt-xxl-0">
-                                <div class="profile bg-gradient-primary-to-secondary">
-                                    <!-- TIP: Replace this with your photo -->
+                                <div class="profile bg-gradient-primary">
                                     <img class="profile-img" src="assets/profile.png" alt="Your photo" />
                                 </div>
                             </div>
@@ -118,9 +121,8 @@
                             <div class="text-center my-5">
                                 <h2 class="display-5 fw-bolder"><span class="text-gradient d-inline">About Me</span></h2>
                                 <p class="lead fw-light mb-4">Hello! I’m Haresh Kumar M, a passionate data analyst and developer.</p>
-                                <p class="text-muted">I specialize in transforming data into actionable insights and building impactful digital solutions. With a keen eye for detail and a strong foundation in analytics, I strive to deliver value through my work.</p>
+                                <p class="text-muted">I specialize in transforming data into actionable insights and building impactful digital solutions. With a keen eye for detail, I strive to deliver value through my work.</p>
                                 <div class="d-flex justify-content-center fs-2 gap-4">
-                                    <!-- Add your social links -->
                                     <a class="text-gradient" href="https://twitter.com/yourprofile" target="_blank"><i class="bi bi-twitter"></i></a>
                                     <a class="text-gradient" href="https://www.linkedin.com/in/haresh-kumar-2a2a58267/" target="_blank"><i class="bi bi-linkedin"></i></a>
                                     <a class="text-gradient" href="https://github.com/HareshKumarM" target="_blank"><i class="bi bi-github"></i></a>
@@ -134,8 +136,8 @@
         <!-- Footer-->
         <footer class="py-4 mt-auto">
             <div class="container px-5">
-                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                    <div class="col-auto"><div class="small m-0">Copyright &copy; Haresh Kumar M 2025</div></div>
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-auto small m-0">&copy; Haresh Kumar M 2025</div>
                     <div class="col-auto">
                         <a class="small" href="#!">Privacy</a>
                         <span class="mx-1">&middot;</span>
