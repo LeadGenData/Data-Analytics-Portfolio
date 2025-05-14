@@ -11,124 +11,144 @@
         <!-- Custom Google font-->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
         <!-- Bootstrap icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
         <style>
-            .libutton {
-                display: inline-flex;
-                justify-content: center;
-                align-items: center;
-                padding: 7px 20px;
-                text-align: center;
-                text-decoration: none;
-                color: #fff;
-                border-radius: 16px;
-                background-color: #0A66C2;
-                font-family: "Roboto", sans-serif;
-                font-size: 14px;
-                transition: background-color 0.3s;
+            :root {
+                --primary-color: #4A00E0; /* Gradient Purple */
+                --secondary-color: #FDC830; /* Gold Gradient */
+                --light-bg: #F4F4F4; /* Soft Background */
+                --dark-text: #212529; /* Dark Text */
+                --text-gradient: linear-gradient(to right, #FDC830, #F37335);
             }
-            .libutton:hover {
-                background-color: #004182;
+
+            body {
+                font-family: 'Plus Jakarta Sans', sans-serif;
+            }
+
+            .navbar-brand span {
+                color: var(--primary-color);
+            }
+
+            .btn-primary {
+                background-color: var(--primary-color);
+                border-color: var(--primary-color);
+            }
+
+            .btn-primary:hover {
+                background-color: #6a11cb; /* Slightly lighter gradient purple */
+                border-color: #6a11cb;
+            }
+
+            .btn-outline-dark:hover {
+                background-color: var(--secondary-color);
+                border-color: var(--secondary-color);
+                color: #fff;
+            }
+
+            .text-gradient {
+                background: var(--text-gradient);
+                -webkit-background-clip: text;
+                color: transparent;
+            }
+
+            .badge {
+                background: var(--text-gradient);
+                color: #fff;
+            }
+
+            footer {
+                background-color: var(--light-bg);
             }
         </style>
     </head>
     <body class="d-flex flex-column h-100">
         <main class="flex-shrink-0">
             <!-- Navigation-->
-            <nav class="navbar navbar-expand-lg navbar-light" style="background: linear-gradient(to right, #4A00E0, #8E2DE2);">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
                 <div class="container px-5">
-                    <a class="navbar-brand" href="index.html">
-                        <span class="fw-bolder text-white">Haresh Kumar M</span>
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+                    <a class="navbar-brand" href="index.html"><span class="fw-bolder">Haresh Kumar M</span></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
-                            <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
-                            <li class="nav-item"><a class="nav-link text-white" href="resume.html">Resume</a></li>
-                            <li class="nav-item"><a class="nav-link text-white" href="projects.html">Projects</a></li>
-                            <li class="nav-item"><a class="nav-link text-white" href="contact.html">Contact</a></li>
+                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+                            <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                         </ul>
                     </div>
                 </div>
             </nav>
-
             <!-- Header-->
-            <header class="py-5" style="background: linear-gradient(90deg, #4A00E0, #8E2DE2); color: white;">
+            <header class="py-5">
                 <div class="container px-5 pb-5">
                     <div class="row gx-5 align-items-center">
-                        <div class="col-lg-6">
-                            <div class="text-center text-lg-start">
-                                <div class="badge bg-gradient-primary-to-secondary text-white mb-4">
-                                    <div class="text-uppercase">Data Analytics &middot; Development &middot; Portfolio</div>
-                                </div>
-                                <h1 class="display-3 fw-bolder mb-4">
-                                    <span class="text-gradient d-inline" style="background: linear-gradient(to right, #FDC830, #F37335); -webkit-background-clip: text; color: transparent;">
-                                        Haresh Kumar M
-                                    </span>
-                                </h1>
-                                <p class="lead fw-light mb-4">Welcome to my portfolio, where I showcase my skills in data analytics and development.</p>
-                                <div class="d-grid gap-3 d-sm-flex justify-content-center justify-content-lg-start">
-                                    <a class="btn btn-dark btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" href="resume.html">View Resume</a>
-                                    <a class="libutton" href="https://www.linkedin.com/in/haresh-kumar-2a2a58267/" target="_blank">Follow on LinkedIn</a>
+                        <div class="col-xxl-5">
+                            <!-- Header text content-->
+                            <div class="text-center text-xxl-start">
+                                <div class="badge bg-gradient-primary-to-secondary text-white mb-4"><div class="text-uppercase">Data Analytics &middot; Development &middot; Portfolio</div></div>
+                                <div class="fs-3 fw-light text-muted">Welcome to my portfolio</div>
+                                <h1 class="display-3 fw-bolder mb-5"><span class="text-gradient d-inline">I am Haresh Kumar M</span></h1>
+                                <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
+                                    <a class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" href="resume.html">Resume</a>
+                                    <a class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder" href="projects.html">Projects</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6">
-                            <div class="d-flex justify-content-center mt-5 mt-lg-0">
+                        <div class="col-xxl-7">
+                            <!-- Header profile picture-->
+                            <div class="d-flex justify-content-center mt-5 mt-xxl-0">
                                 <div class="profile bg-gradient-primary-to-secondary">
-                                    <img class="profile-img" style="width: 200px; height: 200px;" src="assets/profile.png" alt="Your photo" />
+                                    <!-- TIP: Replace this with your photo -->
+                                    <img class="profile-img" src="assets/profile.png" alt="Your photo" />
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </header>
-
             <!-- About Section-->
-            <section class="py-5" style="background-color: #F4F4F4;">
+            <section class="bg-light py-5">
                 <div class="container px-5">
                     <div class="row gx-5 justify-content-center">
-                        <div class="col-lg-8">
+                        <div class="col-xxl-8">
                             <div class="text-center my-5">
-                                <h2 class="display-5 fw-bolder">
-                                    <span class="text-gradient d-inline" style="background: linear-gradient(to right, #FDC830, #F37335); -webkit-background-clip: text; color: transparent;">
-                                        About Me
-                                    </span>
-                                </h2>
-                                <p class="lead fw-light mb-4">I’m a passionate data analyst and developer who specializes in transforming data into actionable insights and building impactful digital solutions.</p>
-                                <p class="text-muted">With a keen eye for detail and a strong focus on quality, I help organizations achieve their goals efficiently. Feel free to connect with me on LinkedIn to learn more about my work and expertise.</p>
+                                <h2 class="display-5 fw-bolder"><span class="text-gradient d-inline">About Me</span></h2>
+                                <p class="lead fw-light mb-4">Hello! I’m Haresh Kumar M, a passionate data analyst and developer.</p>
+                                <p class="text-muted">I specialize in transforming data into actionable insights and building impactful digital solutions. With a keen eye for detail and a strong foundation in analytics, I strive to deliver value through my work.</p>
+                                <div class="d-flex justify-content-center fs-2 gap-4">
+                                    <!-- Add your social links -->
+                                    <a class="text-gradient" href="https://twitter.com/yourprofile" target="_blank"><i class="bi bi-twitter"></i></a>
+                                    <a class="text-gradient" href="https://www.linkedin.com/in/haresh-kumar-2a2a58267/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                                    <a class="text-gradient" href="https://github.com/HareshKumarM" target="_blank"><i class="bi bi-github"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
         </main>
-
         <!-- Footer-->
-        <footer class="py-4 mt-auto" style="background: linear-gradient(to right, #4A00E0, #8E2DE2);">
+        <footer class="py-4 mt-auto">
             <div class="container px-5">
                 <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0">Copyright &copy; Haresh Kumar M 2025</div></div>
                     <div class="col-auto">
-                        <div class="small m-0 text-white">Copyright &copy; Haresh Kumar M 2025</div>
-                    </div>
-                    <div class="col-auto">
-                        <a class="small text-white" href="#!">Privacy</a>
-                        <span class="mx-1 text-white">&middot;</span>
-                        <a class="small text-white" href="#!">Terms</a>
-                        <span class="mx-1 text-white">&middot;</span>
-                        <a class="small text-white" href="#!">Contact</a>
+                        <a class="small" href="#!">Privacy</a>
+                        <span class="mx-1">&middot;</span>
+                        <a class="small" href="#!">Terms</a>
+                        <span class="mx-1">&middot;</span>
+                        <a class="small" href="#!">Contact</a>
                     </div>
                 </div>
             </div>
         </footer>
-
+        <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
     </body>
 </html>
