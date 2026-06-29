@@ -1,6 +1,6 @@
-# M Haresh Kumar | Data Analytics & Cloud Data Engineering Portfolio
+# M Haresh Kumar | Data Analytics & Systems Automation Specialist Portfolio
 
-This portfolio showcases clean, business-focused data analysis models, cloud data pipelines, and custom automation scripts.
+This portfolio showcases clean, business-focused data analysis models, relational SQL/Snowflake pipelines, and custom automation scripts.
 
 ## 📂 Repository Contents
 
